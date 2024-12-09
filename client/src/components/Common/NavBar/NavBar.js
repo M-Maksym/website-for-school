@@ -19,34 +19,15 @@ export default function Navbar() {
 
             {/* college name and logo  */}
             <Link href="/" className="flex items-center space-x-3">
-              <img src="/collegelogo.png" className="h-6 md:h-8 lg:h-10" alt="AOT Logo" />
-              <AnimatedElement className="font-bold  font-serif text-xs sm:text-lg text-blue-900 ">
-                ACADEMY OF TECHNOLOGY
+              {/* <img src="/collegelogo.png" className="h-6 md:h-8 lg:h-10" alt="AOT Logo" /> */}
+              <AnimatedElement className="font-bold  font-serif text-xs sm:text-lg text-[#066466] mr-8">
+              Новгородківська філія Ліцею Новгородківської селищної ради
                 <div className="text-[8px] sm:text-xs text-right ">
-                  ....translate your vision into reality
+                  Успіх починається зі знань!
                 </div>
               </AnimatedElement>
             </Link>
 
-            {/* search bar  */}
-            <div className="relative hidden md:block">
-              <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                </svg>
-              </div>
-              <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-md rounded-2xl bg-[#C1CFFF] opacity-50 outline-none border-none text-black" placeholder="Search..." />
-            </div>
-
-            {/* Hamburger */}
-            {/* <button className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden dark:text-gray-400 " aria-expanded="false"
-              onClick={() => { setNavOpen(prev => !prev) }}>
-
-              <span className="sr-only">Open main menu</span>
-              <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-              </svg>
-            </button> */}
             <button className='md:hidden' onClick={() => { setNavOpen(prev => !prev) }} >
               <HamburgerIcon NavOpen={NavOpen} />
             </button>
@@ -54,17 +35,17 @@ export default function Navbar() {
         </nav>
 
         <nav className="bg-transparent flex justify-evenly items-center">
-          <div className={`items-center justify-center ${NavOpen ? 'h-96 p-2' : 'h-0'} transition-transition-height duration-500 ease-in-out overflow-hidden md:overflow-visible md:h-full md:p-2 w-full md:flex bg-blue-950 md:order-1`} >
+          <div className={`items-center justify-center ${NavOpen ? 'h-96 p-2' : 'h-0'} transition-transition-height duration-500 ease-in-out overflow-hidden md:overflow-visible md:h-full md:p-2 w-full md:flex bg-[#066466] md:order-1`} >
 
             {/* Mobile Search */}
-            <div className="relative mt-3 md:hidden border-2 border-gray-300 rounded-lg">
+            {/* <div className="relative mt-3 md:hidden border-2 border-gray-300 rounded-lg">
               <div className="absolute pl-2 inset-y-0 start-0 flex items-center pointer-events-none">
                 <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                 </svg>
               </div>
               <input type="text" className="text-white block w-full p-2 ps-10 text-md rounded-xl border-none bg-transparent" placeholder="Search..." />
-            </div>
+            </div> */}
 
             {/* Nav Links */}
             <AnimatedElement>
@@ -72,7 +53,6 @@ export default function Navbar() {
                 <NavLinks />
               </ul>
             </AnimatedElement>
-
           </div>
         </nav>
       </div>
