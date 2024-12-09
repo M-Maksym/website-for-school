@@ -9,39 +9,39 @@ function NavLinks() {
   const { authUser, IsLoading, setAuthUser } = useAuth();
   const links = [
     {
-      title: "Home",
+      title: "Домашня сторінка",
       path: "/",
     },
     {
-      title: "About",
+      title: "Про нас",
       path: "/about",
     },
     {
-      title: "Contact",
+      title: "Контакти",
       path: "/contact",
     },
     {
-      title: "Events",
+      title: "Події",
       path: "/events",
     },
     {
-      title: "Highlights",
+      title: "Основні моменти",
       path: "/highlights",
     },
     {
       isDropdown: true,
-      title: "Academics",
+      title: "Учню",
       links: [
         {
           title: "Departments",
           path: "/academics/departments",
         },
         {
-          title: "Library",
+          title: "Бібліотека",
           path: "/academics/resources/library",
         },
         {
-          title: "moodle",
+          title: "Classroom",
           path: "/academics/resources/moodle",
         },
       ]
