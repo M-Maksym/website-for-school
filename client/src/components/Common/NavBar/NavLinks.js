@@ -9,56 +9,88 @@ function NavLinks() {
   const { authUser, IsLoading, setAuthUser } = useAuth();
   const links = [
     {
-      title: "Домашня сторінка",
+      title: "Головна сторінка",
       path: "/",
     },
     {
-      title: "Про нас",
-      path: "/about",
+      isDropdown: true,
+      title: "Інформація про школу",
+      links: [
+        {
+          title: "Історія",
+          path: "/about",
+        },
+        {
+          title: "Колектив",
+          path: "/collective",
+        },
+        {
+          title: "Цифрові технології",
+          path: "/digital-technologies",
+        },
+      ]
+    },
+    {
+      title: "Новини",
+      path: "/events",
+    },
+    {
+      isDropdown: true,
+      title: "Структура навчального року",
+      links: [
+        {
+          title: "Структура",
+          path: "/structure-year/structure",
+        },
+        {
+          title: "Розклад уроків",
+          path: "/structure-year/lesson-schedule",
+        },
+        {
+          title: "Розклад дзвінків",
+          path: "/structure-year/call-schedule",
+        },
+      ]
+    },
+    {
+      isDropdown: true,
+      title: "Батькам і дітям",
+      links: [
+        {
+          title: "Випускнику та ДПА",
+          path: "/parents/graduate",
+        },
+        {
+          title: "Зарахування дітей до школи",
+          path: "/parents/children",
+        },
+        {
+          title: "Доступність закладу освіти для осіб з особливими потребами",
+          path: "/parents/accessibility",
+        },
+        {
+          title: "Корисне та цікаве",
+          path: "/parents/interesting",
+        },
+      ]
     },
     {
       title: "Контакти",
       path: "/contact",
     },
     {
-      title: "Події",
-      path: "/events",
+      title: "Методична робота",
+      path: "/methodical-work",
     },
     {
-      title: "Основні моменти",
-      path: "/highlights",
+      title: "Публічна інформація",
+      path: "/public-information",
     },
-    {
-      isDropdown: true,
-      title: "Учню",
-      links: [
-        {
-          title: "Departments",
-          path: "/academics/departments",
-        },
-        {
-          title: "Бібліотека",
-          path: "/academics/resources/library",
-        },
-        {
-          title: "Classroom",
-          path: "/academics/resources/moodle",
-        },
-      ]
-    },
-    {
-      title: "Alumni",
-      path: "/alumni",
-    },
-    // {
-    //   title: "Administration",
-    //   path: "/administration",
-    // },
     {
       authDependent: true,
-      title: "LogIn",
+      title: "Увійти",
       path: "/login",
-      Alttitle: "Dashboard",
+      Alttitle: "Керування",
       Altpath: "/admin/dashboard",
     },
   ];
