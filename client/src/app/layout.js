@@ -10,16 +10,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASEURL),
-  title: 'Academy of Technology',
-  description: 'Academy of Technology',
+  title: 'Новгородківська Філія',
+  description: 'Новгородківська філія Ліцею Новгородківської селищної ради',
   generator: 'Next.js',
-  applicationName: 'Academy of Technology',
+  applicationName: 'Новгородківська Філія',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Academy of Technology', 'soumojit', 'shome', 'soumojitshome', 'Next.js', 'React'],
+  keywords: ['Новгородківська Філія', 'філія', 'новгородка', "кам'янець", 'Next.js', 'React'],
 
-  authors: [{ name: 'Soumojit Shome' }, { name: 'Soumojit Shome', url: 'https://soumojitshome.vercel.app' }],
-  creator: 'Soumojit Shome',
-  publisher: 'Soumojit Shome',
+  authors: [{ name: 'Maks Meleshko' }],
+  creator: 'Maks',
+  publisher: 'Maks',
 
   icons: {
     icon: '/logo.jpeg',
@@ -32,10 +32,10 @@ export const metadata = {
   },
 
   openGraph: {
-    title: 'Academy of Technology',
-    description: 'Academy of Technology',
+    title: 'Новгородківська Філія',
+    description: 'Новгородківська філія Ліцею Новгородківської селищної ради',
     url: '/logo.jpeg',
-    siteName: 'Academy of Technology',
+    siteName: 'Новгородківська Філія',
     images: [
       {
         url: '/logo.jpeg', // Must be an absolute URL
@@ -46,7 +46,7 @@ export const metadata = {
         url: '/logo.jpeg', // Must be an absolute URL
         width: 1800,
         height: 1600,
-        alt: 'Academy of Technology',
+        alt: 'Новгородківська Філія',
       },
     ],
     locale: 'en_US',
@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
             <img src="/background.png" className=" h-screen w-full fixed top-0 left-0 -z-50" />
           </div> */}
           <div className=" h-screen w-full fixed top-0 left-0 -z-50 bg-gradient-to-b from-white to-blue-100" ></div>
-          <NextTopLoader color="#FF0000"
+          <NextTopLoader color="#066466"
             initialPosition={0.08}
             height={4}
             crawl={true}

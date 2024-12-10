@@ -37,15 +37,6 @@ export default function Navbar() {
         <nav className="bg-transparent flex justify-evenly items-center">
           <div className={`items-center justify-center ${NavOpen ? 'h-96 p-2' : 'h-0'} transition-transition-height duration-500 ease-in-out overflow-hidden md:overflow-visible md:h-full md:p-2 w-full md:flex bg-[#066466] md:order-1`} >
 
-            {/* Mobile Search */}
-            {/* <div className="relative mt-3 md:hidden border-2 border-gray-300 rounded-lg">
-              <div className="absolute pl-2 inset-y-0 start-0 flex items-center pointer-events-none">
-                <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                </svg>
-              </div>
-              <input type="text" className="text-white block w-full p-2 ps-10 text-md rounded-xl border-none bg-transparent" placeholder="Search..." />
-            </div> */}
 
             {/* Nav Links */}
             <AnimatedElement>
