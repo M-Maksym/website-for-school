@@ -75,10 +75,6 @@ function NavLinks() {
       ]
     },
     {
-      title: "Контакти",
-      path: "/contact",
-    },
-    {
       title: "Методична робота",
       path: "/methodical-work",
     },
