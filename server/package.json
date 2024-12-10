@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "college website backend",
+  "description": "school website backend",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
@@ -9,7 +9,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "author": "Ritesh Pramanik",
+  "author": "Maks",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
