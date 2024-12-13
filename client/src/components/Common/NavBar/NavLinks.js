@@ -9,56 +9,84 @@ function NavLinks() {
   const { authUser, IsLoading, setAuthUser } = useAuth();
   const links = [
     {
-      title: "Домашня сторінка",
+      title: "Головна сторінка",
       path: "/",
     },
     {
-      title: "Про нас",
-      path: "/about",
-    },
-    {
-      title: "Контакти",
-      path: "/contact",
-    },
-    {
-      title: "Події",
-      path: "/events",
-    },
-    {
-      title: "Основні моменти",
-      path: "/highlights",
-    },
-    {
       isDropdown: true,
-      title: "Учню",
+      title: "Інформація про школу",
       links: [
         {
-          title: "Departments",
-          path: "/academics/departments",
+          title: "Історія",
+          path: "/about",
         },
         {
-          title: "Бібліотека",
-          path: "/academics/resources/library",
+          title: "Колектив",
+          path: "/collective",
         },
         {
-          title: "Classroom",
-          path: "/academics/resources/moodle",
+          title: "Цифрові технології",
+          path: "/digital-technologies",
         },
       ]
     },
     {
-      title: "Alumni",
-      path: "/alumni",
+      title: "Новини",
+      path: "/events",
     },
-    // {
-    //   title: "Administration",
-    //   path: "/administration",
-    // },
+    {
+      isDropdown: true,
+      title: "Структура навчального року",
+      links: [
+        {
+          title: "Структура",
+          path: "/structure-year/structure",
+        },
+        {
+          title: "Розклад уроків",
+          path: "/structure-year/lesson-schedule",
+        },
+        {
+          title: "Розклад дзвінків",
+          path: "/structure-year/call-schedule",
+        },
+      ]
+    },
+    {
+      isDropdown: true,
+      title: "Батькам і дітям",
+      links: [
+        {
+          title: "Випускнику та ДПА",
+          path: "/parents/graduate",
+        },
+        {
+          title: "Зарахування дітей до школи",
+          path: "/parents/children",
+        },
+        {
+          title: "Доступність закладу освіти для осіб з особливими потребами",
+          path: "/parents/accessibility",
+        },
+        {
+          title: "Корисне та цікаве",
+          path: "/parents/interesting",
+        },
+      ]
+    },
+    {
+      title: "Методична робота",
+      path: "/methodical-work",
+    },
+    {
+      title: "Публічна інформація",
+      path: "/public-information",
+    },
     {
       authDependent: true,
-      title: "LogIn",
+      title: "Увійти",
       path: "/login",
-      Alttitle: "Dashboard",
+      Alttitle: "Керування",
       Altpath: "/admin/dashboard",
     },
   ];

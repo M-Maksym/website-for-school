@@ -28,9 +28,6 @@ export default function page() {
       <NoticeLine />
       <AboutCard />
       <EventCardSection />
-      <HighlightsSection />
-      <DepartmentsSection />
-      <Accordion />
     </div>
   )
 }

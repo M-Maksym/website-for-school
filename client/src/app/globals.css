@@ -21,7 +21,7 @@
 
 ::-webkit-scrollbar-thumb {
   /* background-color: #000944; */
-  @apply bg-blue-950;
+  @apply bg-[#066466];
 }
 
 ::-webkit-scrollbar-thumb :hover {
